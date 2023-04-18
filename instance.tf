@@ -1,6 +1,5 @@
 resource "aws_instance" "example" {
-   name = "Terra-EC2"
-   ami           = var.AMIS
+  ami           = var.AMIS
   instance_type = "t2.micro"
 
   # the VPC subnet
