@@ -1,7 +1,9 @@
 resource "aws_instance" "example" {
   ami           = var.AMIS
   instance_type = "t2.micro"
-
+  tags = {
+    Name = "Terra-EC2"
+  }
   # the VPC subnet
   subnet_id = aws_subnet.main-public-1.id
 
