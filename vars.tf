@@ -19,5 +19,5 @@ variable "PATH_TO_PUBLIC_KEY" {
 }
 
 variable "AMIS" {
-  default = "we need to add ami from your aws account"
+  default = "resolve:ssm:/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2"
 }
