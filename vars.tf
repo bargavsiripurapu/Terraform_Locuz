@@ -2,14 +2,6 @@ variable "AWS_REGION" {
   default = "us-east-1"
 }
 
-variable "bucket_name" {
-    default = "Terra_s3"
-}
-
-variable "acl_value" {
-    default = "private"
-}
-
 variable "access_key"{
   default = "Please provide the access_key here"
 }
